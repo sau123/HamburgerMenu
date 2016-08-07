@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		347685EF1D57CB1C0003CA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347685EE1D57CB1C0003CA3E /* AppDelegate.swift */; };
-		347685F11D57CB1C0003CA3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347685F01D57CB1C0003CA3E /* ViewController.swift */; };
 		347685F41D57CB1C0003CA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347685F21D57CB1C0003CA3E /* Main.storyboard */; };
 		347685F61D57CB1C0003CA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 347685F51D57CB1C0003CA3E /* Assets.xcassets */; };
 		347685F91D57CB1C0003CA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347685F71D57CB1C0003CA3E /* LaunchScreen.storyboard */; };
+		347686011D57CD2B0003CA3E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347686001D57CD2B0003CA3E /* MenuViewController.swift */; };
+		347686031D57CD9C0003CA3E /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347686021D57CD9C0003CA3E /* BlueViewController.swift */; };
+		347686051D57CDA60003CA3E /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347686041D57CDA60003CA3E /* PinkViewController.swift */; };
+		347686071D57CDAD0003CA3E /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347686061D57CDAD0003CA3E /* GreenViewController.swift */; };
+		3476860A1D57D0070003CA3E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347686091D57D0070003CA3E /* MenuCell.swift */; };
+		3476860D1D57D1A20003CA3E /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3476860C1D57D1A20003CA3E /* HamburgerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		347685EB1D57CB1C0003CA3E /* HamburgerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		347685EE1D57CB1C0003CA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		347685F01D57CB1C0003CA3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		347685F31D57CB1C0003CA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		347685F51D57CB1C0003CA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		347685F81D57CB1C0003CA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		347685FA1D57CB1C0003CA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		347686001D57CD2B0003CA3E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		347686021D57CD9C0003CA3E /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		347686041D57CDA60003CA3E /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
+		347686061D57CDAD0003CA3E /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		347686091D57D0070003CA3E /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		3476860C1D57D1A20003CA3E /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				347685EE1D57CB1C0003CA3E /* AppDelegate.swift */,
-				347685F01D57CB1C0003CA3E /* ViewController.swift */,
 				347685F21D57CB1C0003CA3E /* Main.storyboard */,
 				347685F51D57CB1C0003CA3E /* Assets.xcassets */,
+				3476860B1D57D1590003CA3E /* View Controllers */,
+				347686081D57CFE60003CA3E /* Views */,
 				347685F71D57CB1C0003CA3E /* LaunchScreen.storyboard */,
 				347685FA1D57CB1C0003CA3E /* Info.plist */,
 			);
 			path = HamburgerMenu;
+			sourceTree = "<group>";
+		};
+		347686081D57CFE60003CA3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				347686091D57D0070003CA3E /* MenuCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3476860B1D57D1590003CA3E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				347686021D57CD9C0003CA3E /* BlueViewController.swift */,
+				347686041D57CDA60003CA3E /* PinkViewController.swift */,
+				3476860C1D57D1A20003CA3E /* HamburgerViewController.swift */,
+				347686001D57CD2B0003CA3E /* MenuViewController.swift */,
+				347686061D57CDAD0003CA3E /* GreenViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347685F11D57CB1C0003CA3E /* ViewController.swift in Sources */,
+				347686051D57CDA60003CA3E /* PinkViewController.swift in Sources */,
 				347685EF1D57CB1C0003CA3E /* AppDelegate.swift in Sources */,
+				3476860A1D57D0070003CA3E /* MenuCell.swift in Sources */,
+				347686031D57CD9C0003CA3E /* BlueViewController.swift in Sources */,
+				347686011D57CD2B0003CA3E /* MenuViewController.swift in Sources */,
+				347686071D57CDAD0003CA3E /* GreenViewController.swift in Sources */,
+				3476860D1D57D1A20003CA3E /* HamburgerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
