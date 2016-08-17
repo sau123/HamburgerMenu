@@ -53,3 +53,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// status.entities.retweet_count
+// status.entities.favorite_count
